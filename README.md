@@ -1,2 +1,2 @@
-# OpenDispatchHub.Abstraction
-The abstraction layer for OpenDispatchHub
+# OpenDispatchHub.Common
+Provides common tools and objects for OpenDispatchHub.
