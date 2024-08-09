@@ -16,7 +16,7 @@ public interface IRouteManager
     /// </summary>
     /// <param name="query">The query, use anonymous object to run property search</param>
     /// <returns>Enumeration of routes</returns>
-    IAsyncEnumerable<IRoute> Search(object query);
+    IAsyncEnumerable<IRoute> Search(object? query);
 
     /// <summary>
     /// Creates a new blank route
