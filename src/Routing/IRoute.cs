@@ -1,4 +1,4 @@
-﻿using System.Collections.Immutable;
+﻿using OpenDispatchHub.Users;
 
 namespace OpenDispatchHub.Routing;
 /// <summary>
@@ -27,7 +27,18 @@ public interface IRoute
     int TotalStops { get; }
 
     /// <summary>
+    /// The total calculated drivable miles
+    /// </summary>
+    float TotalMiles { get; }
+
+    /// <summary>
     /// Collection of stops on route
     /// </summary>
     IEnumerable<IRouteStop> GetStops();
+
+    /// <summary>
+    /// Returns the driver assigned to this route
+    /// </summary>
+    /// <returns></returns>
+    IDriver? GetDriver();
 }
